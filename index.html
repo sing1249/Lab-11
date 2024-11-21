@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Accordion</title>
+    <link href="accordion.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <main>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="container">
+        <h1>Simple Accordions</h1>
+
+        <div class="accordion">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="sect1" id="accordion1id">
+              <span class="accordion-title">Website Design and Development</span>
+            </button>
+          </h3>
+          <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden="">
+            <p>
+              Whether you need a wordpress website, a shopify site, or a custom fullstack application, we got you! No matter what kind of website or application you need, it will be made with clean and maintable code that follows modern development standards. We also have top notch designers that can make unique designs that will make your website look different and unique. Not to mention that we also provide 24/7 website maintenance so that you get all the support you need.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="sect2" id="accordion2id">
+              <span class="accordion-title">Website Analytics and Performance</span>
+            </button>
+          </h3>
+          <div id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+            <p>
+              We believe that in order to have a successful website, you need to constantly adjust and adapt to the data provided by your website visitors. Here at Pierre Web Development, we have narrowed down the specific key performance indicators that will dramatically boost your success with connecting to target markets. We will provide a basic metric dashboard based on how much traffic your site gets, detailed analytical reports that show which parts of your website is the most popular among visitors as well as access to tools you can use to make meaningful decisions based on this data.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="sect3" id="accordion3id">
+              <span class="accordion-title">Digital Marketing</span>
+            </button>
+          </h3>
+          <div id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+            <p>
+              We believe that in order to have a successful website, you need to constantly adjust and adapt to the data provided by your website visitors. Here at Pierre Web Development, we have narrowed down the specific key performance indicators that will dramatically boost your success with connecting to target markets. We will provide a basic metric dashboard based on how much traffic your site gets, detailed analytical reports that show which parts of your website is the most popular among visitors as well as access to tools you can use to make meaningful decisions based on this data.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <script src="accordion.js"></script>
+    </main>
+  </body>
+</html>
