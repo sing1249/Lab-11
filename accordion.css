@@ -1,0 +1,74 @@
+/* Setting the styling for accordion container */
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+/* Button style for accordion*/
+.accordion-trigger {
+  width: 100%;
+  background-color: whitesmoke;
+  color: #333;
+  padding: 15px 20px; /* Matches old padding */
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+  display: flex;
+  align-items: center; /* For alignment */
+}
+
+/* Icon styles */
+.accordion-trigger:after {
+  font-family: FontAwesome;
+  content: "\f150"; 
+  font-size: 18px;
+  margin-left: auto; 
+  transition: transform 0.2s ease;
+}
+
+.accordion-trigger[aria-expanded="true"]:after {
+  content: "\f151"; 
+}
+
+.accordion-trigger:hover,
+.accordion-trigger[aria-expanded="true"] {
+  background-color: #ddd;
+}
+/* Style for content */
+.accordion-panel {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* This will hide the content when it starts */
+.accordion-panel[hidden] {
+  display: none;
+}
+
+/* When expanded use this style */
+.accordion-trigger[aria-expanded="true"] {
+  background-color: #ddd;
+}
+
+
+.accordion-title {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.accordion-icon {
+  margin-left: 10px;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
